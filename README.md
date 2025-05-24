@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ⚡ Speeedy Landing Page – Quick Start
 
-## Getting Started
+Welcome to the Speeedy landing‑page repo. Follow the steps below to run the project locally in less than five minutes.
 
-First, run the development server:
+---
+
+## 1  Prerequisites
+
+| Tool         | Version (or newer) | Check with            |
+|--------------|-------------------|-----------------------|
+| Node.js      | **18.x**          | `node -v`             |
+| npm *or* pnpm| npm ≥ 10 / pnpm ≥ 8| `npm -v` / `pnpm -v`  |
+| git          | any recent        | `git --version`       |
+
+> **Tip:** If you don’t have **pnpm** (faster installs) you can globally install it once:  
+> `npm i -g pnpm`
+
+---
+
+## 2  Install Dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# inside the project folder
+pnpm install        # or: npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 3  Start the Dev Server
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm dev            # or: npm run dev
+```
 
-## Learn More
+Open **<http://localhost:3000>** in your browser. The site auto‑reloads when you edit files.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 4  Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+speeedy-landing/
+├─ src/
+│  ├─ app/
+│  │  └─ page.tsx          # main landing page (React + Tailwind + Framer Motion)
+│  └─ components/ui/       # shadcn button & card primitives
+├─ public/                 # static assets (optional)
+├─ tailwind.config.ts      # Tailwind setup
+├─ components.json         # shadcn-ui registry
+└─ package.json            # scripts: dev / build / start
+```
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 5  Google Forms Links
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+If the form URLs change:
+
+1. Open **`src/app/page.tsx`**  
+2. Search for `formSrc`  
+3. Replace the Rider, Driver, or Other embed URLs (and `<THIRD_FORM_EMBED>` if still placeholder).
+
+---
+
+## 6  Production Build (optional)
+
+```bash
+pnpm build          # or: npm run build
+```
+
+---
+
+## 7  Deploy (optional)
+
+The quickest route is **Vercel**:
+
+1. Push the repo to GitHub  
+2. Sign in at <https://vercel.com> → **Add New Project**  
+3. Pick your repo; keep the defaults → **Deploy**  
+
+You’ll get a live HTTPS URL in ~1 min.
+
+---
+
+## 8  Troubleshooting
+
+| Symptom                                    | Fix                                                       |
+|--------------------------------------------|-----------------------------------------------------------|
+| `node: command not found`                  | Install Node 18+ from <https://nodejs.org>                |
+| Port already in use (`EADDRINUSE :3000`)   | Stop what’s on :3000 or run `PORT=3001 pnpm dev`          |
+| Errors about `shadcn` or `framer-motion`   | Run `pnpm install` (or `npm install`) to reinstall deps   |
+
+---
+
+Happy coding! 🏎️
+
