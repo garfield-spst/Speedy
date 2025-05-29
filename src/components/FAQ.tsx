@@ -14,24 +14,24 @@ import {
 
 const faqs = [
   {
-    q: 'Is Speeedy a taxi service?',
-    a: 'No. Drivers only split actual trip costs; they cannot make a profit on Speeedy.',
+    q: 'What is Speedy?',
+    a: 'A community-powered intercity carpooling platform. We connect riders and drivers going the same way.',
   },
   {
-    q: 'How is the ride price calculated?',
-    a: 'Fuel, tolls and parking divided by all passengers (including the driver). The app suggests a fair share automatically.',
+    q: 'How do I join a ride?',
+    a: 'Fill out the Speeedy rider google form. Just enter your route & date.',
   },
   {
-    q: 'Are rides insured?',
-    a: 'Drivers must carry passenger-cover insurance. Speeedy itself is not an insurer.',
+    q: 'What cities does Speeedy cover?',
+    a: 'We are live across major intercity routes: Jaipur-Delhi, Delhi-Chandigarh, and more.',
   },
   {
     q: 'Can I cancel a booking?',
-    a: 'Yes—free up to 1 hour before pickup. Later cancellations may incur a small fee.',
+    a: 'Yes free up to 1 hour before pickup. Later cancellations may incur a small fee.',
   },
   {
-    q: 'Is there a safety helpline?',
-    a: 'Yes, an in-app SOS button connects you to our 24×7 safety desk and local emergency numbers.',
+    q: 'Is speedy safe?',
+    a: 'Yes, all users are verified. Ratings, reviews & trip history ensure trust.',
   },
 ];
 

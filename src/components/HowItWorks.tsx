@@ -11,7 +11,7 @@ const steps = [
   },
   {
     title: '2. Book & Split Costs',
-    text: 'Agree on the fair fuel-share up-front. No hidden fees, no profit – ever.',
+    text: 'Agree on the fair fuel-share up-front. No hidden fees, only cost sharing.',
     icon: Handshake,
   },
   {
