@@ -23,7 +23,7 @@ jobs:
             if [ ! -d "Speedy" ]; then
               git clone https://github.com/garfield-spst/Speedy.git && cd Speedy
             else
-              cd Speedy && git pull --rebase
+              cd Speedy && git pull
             fi
             docker-compose down
             docker-compose up -d --build
