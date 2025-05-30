@@ -14,7 +14,7 @@ import {
 
 const faqs = [
   {
-    q: 'What is Speedy?',
+    q: 'What is Speeedy?',
     a: 'A community-powered intercity carpooling platform. We connect riders and drivers going the same way.',
   },
   {
@@ -30,7 +30,7 @@ const faqs = [
     a: 'Yes free up to 1 hour before pickup. Later cancellations may incur a small fee.',
   },
   {
-    q: 'Is speedy safe?',
+    q: 'Is speeedy safe?',
     a: 'Yes, all users are verified. Ratings, reviews & trip history ensure trust.',
   },
 ];
