@@ -20,11 +20,8 @@ jobs:
           username: ubuntu
           key: ${{ secrets.AWS_SSH_KEY }}
           script: |
-            if [ ! -d "Speedy" ]; then
-              git clone https://github.com/garfield-spst/Speedy.git && cd Speedy
-            else
-              cd Speedy && git pull
-            fi
+            rm -rf Speedy
+            git clone https://github.com/garfield-spst/Speedy.git && cd Speedy
             docker-compose down
             docker-compose up -d --build
 
