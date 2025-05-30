@@ -1,12 +1,8 @@
 gospeeedy.com {
   reverse_proxy speeedy:3000
-  # tls kuldeepshekhawat2129@gmail.com
 }
 
 http://gospeeedy.com {
-  redir https://gospeeedy.com{uri} permanent
+  redir https://gospeeedy.com{uri} permanent # Test
 }
 
-#:80 {
-  #reverse_proxy speeedy:3000
-#}
